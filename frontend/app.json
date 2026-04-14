@@ -1,0 +1,52 @@
+{
+  "expo": {
+    "name": "Camera AI",
+    "slug": "camera-ai",
+    "version": "1.0.0",
+    "orientation": "portrait",
+    "platforms": ["ios", "android"],
+    "plugins": [
+      "expo-secure-store",
+      "expo-font",
+      [
+        "expo-camera",
+        {
+          "cameraPermission": "Kamera ruxsatini bering",
+          "microphonePermission": "Mikrofon ruxsatini bering",
+          "recordAudioAndroid": true
+        }
+      ],
+      [
+        "expo-image-picker",
+        {
+          "photosPermission": "Galereya ruxsatini bering",
+          "cameraPermission": "Kamera ruxsatini bering"
+        }
+      ],
+      [
+        "expo-media-library",
+        {
+          "photosPermission": "Rasm saqlash uchun ruxsat bering",
+          "savePhotosPermission": "Rasm saqlash uchun ruxsat bering",
+          "isAccessMediaLocationEnabled": true
+        }
+      ]
+    ],
+    "android": {
+      "package": "com.akbarjon.cameraai",
+      "permissions": [
+        "CAMERA",
+        "READ_EXTERNAL_STORAGE",
+        "WRITE_EXTERNAL_STORAGE",
+        "RECORD_AUDIO",
+        "READ_MEDIA_IMAGES",
+        "READ_MEDIA_VIDEO"
+      ]
+    },
+    "extra": {
+      "eas": {
+        "projectId": "771976d1-f959-4a2a-8af7-46076ad7ca85"
+      }
+    }
+  }
+}
