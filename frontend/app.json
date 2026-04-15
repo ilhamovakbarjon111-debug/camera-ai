@@ -4,36 +4,32 @@
     "slug": "camera-ai",
     "version": "1.0.0",
     "orientation": "portrait",
+    "splash": {
+      "backgroundColor": "#ffffff",
+      "resizeMode": "contain"
+    },
     "platforms": ["ios", "android"],
     "plugins": [
       "expo-secure-store",
       "expo-font",
-      [
-        "expo-camera",
-        {
-          "cameraPermission": "Kamera ruxsatini bering",
-          "microphonePermission": "Mikrofon ruxsatini bering",
-          "recordAudioAndroid": true
-        }
-      ],
-      [
-        "expo-image-picker",
-        {
-          "photosPermission": "Galereya ruxsatini bering",
-          "cameraPermission": "Kamera ruxsatini bering"
-        }
-      ],
-      [
-        "expo-media-library",
-        {
-          "photosPermission": "Rasm saqlash uchun ruxsat bering",
-          "savePhotosPermission": "Rasm saqlash uchun ruxsat bering",
-          "isAccessMediaLocationEnabled": true
-        }
-      ]
+      ["expo-camera", {
+        "cameraPermission": "Kamera ruxsatini bering",
+        "microphonePermission": "Mikrofon ruxsatini bering",
+        "recordAudioAndroid": true
+      }],
+      ["expo-image-picker", {
+        "photosPermission": "Galereya ruxsatini bering",
+        "cameraPermission": "Kamera ruxsatini bering"
+      }],
+      ["expo-media-library", {
+        "photosPermission": "Rasm saqlash uchun ruxsat bering",
+        "savePhotosPermission": "Rasm saqlash uchun ruxsat bering",
+        "isAccessMediaLocationEnabled": true
+      }]
     ],
     "android": {
       "package": "com.akbarjon.cameraai",
+      "newArchEnabled": false,
       "permissions": [
         "CAMERA",
         "READ_EXTERNAL_STORAGE",
